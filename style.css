@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    bottom: 50px;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+/* laat de balk springen */
+@keyframes jump {
+    0% {
+        bottom: 50px;
+    }
+
+    30% {
+        bottom: 90px;
+    }
+
+    70% {
+        bottom: 90px;
+    }
+
+    100% {
+        bottom: 50px;
+    }
+}
+
+
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    bottom: 70px;
+    left: 482px;
+    animation: block 1s infinite linear;
+}
+
+
+
+/* blokje laten bewegen */
+
+@keyframes block {
+    0% {
+        left: 482px;
+    }
+
+    100% {
+        left: -40px;
+    }
+}
+
+/* cirkel laten bewegen */
+
+@keyframes circle{
+    0%{
+        left: 500px;
+    }
+    60%{
+        left: 300px;
+    }
+    100%{
+        left: -20px;
+    }
+}
